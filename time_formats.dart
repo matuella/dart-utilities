@@ -3,6 +3,7 @@
 /// Example: `formatToMilitaryTime(920) == "15:20"`.
 ///
 /// Pads with zeroes if necessary, i.e. `formatToMilitaryTime(540) == "09:00"`.
+/// TODO(matuella): Improve naming.
 String formatToMilitaryTime(Duration duration) {
   // Pads left with one zero if necessary, i.e. `twoDigits(2) == "02"`.
   String twoDigits(int value) => value.toString().padLeft(2, '0');
